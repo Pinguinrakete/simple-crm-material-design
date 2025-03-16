@@ -5,11 +5,17 @@
     </div>
 
   <ul class="menu-items">
-    <li><mat-icon>fact_check</mat-icon>Dashboard</li>
-    <li><mat-icon>perm_identity</mat-icon>User</li>
+    <li routerLink="" routerLinkActive="active" ariaCurrentWhenActive="page">
+      <mat-icon>fact_check</mat-icon>
+      Dashboard
+    </li>
+    <li routerLink="user" routerLinkActive="active" ariaCurrentWhenActive="page">
+      <mat-icon>perm_identity</mat-icon>
+      User
+    </li>
   </ul>
-
   </mat-drawer>
+
 
   <div class="example-sidenav-content">
     <mat-toolbar color="primary">
@@ -19,6 +25,10 @@
       </mat-toolbar-row>
     </mat-toolbar>
 
+    <div class="router-container">
+      <router-outlet></router-outlet>
+    </div>
+    
   </div>
   
   </mat-drawer-container>
