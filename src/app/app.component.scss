@@ -2,6 +2,12 @@
     height: 100vh;
 }
 
+img {
+    height: 56px;
+    width: 250px;
+    object-fit: cover;
+}
+
 .menu-icon {
     cursor: pointer;
 }
@@ -12,7 +18,7 @@
 
 .logo-container {
     border-bottom: 1px solid rgba(0, 0, 0, 0.04);
-    padding-left: 16px;
+    // padding-left: 16px;
     min-height: 56px;
     display: flex;
     align-items: center;
