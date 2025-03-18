@@ -1,3 +1,14 @@
+.dialog-container {
+    position: relative;
+
+    mat-progree-bar {
+        position: absolute;
+        left: -24px;
+        right: -24px;
+        top: -24px;
+    }
+}
+
 .mlr-0 {
     margin: 0 24px 20px 24px;
     padding: 0;
