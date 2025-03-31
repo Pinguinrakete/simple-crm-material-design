@@ -5,35 +5,10 @@
             <th>E-Mail</th>
             <th>City</th>
         </tr>
-        <tr>
-            <td>aaa</td>
-            <td>bbb</td>
-            <td>ccc</td>
-        </tr>
-        <tr>
-            <td>aaa</td>
-            <td>bbb</td>
-            <td>ccc</td>
-        </tr>
-        <tr>
-            <td>aaa</td>
-            <td>bbb</td>
-            <td>ccc</td>
-        </tr>
-        <tr>
-            <td>aaa</td>
-            <td>bbb</td>
-            <td>ccc</td>
-        </tr>
-        <tr>
-            <td>aaa</td>
-            <td>bbb</td>
-            <td>ccc</td>
-        </tr>
-        <tr>
-            <td>aaa</td>
-            <td>bbb</td>
-            <td>ccc</td>
+        <tr *ngFor="let user of allUsers">
+            <td>{{ user.firstName }} {{ user.lastName }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.city }}</td>
         </tr>
     </table>
 
