@@ -41,7 +41,6 @@ export class DialogAddUserComponent implements OnInit {
     addDoc(usersCollectionRef, this.user.toJSON())
       .then((result: any) => {
         this.loading = false;
-        console.log('Adding user finished', result);
         this.cdRef.detectChanges();
         this.dialogRef.close();
       });
