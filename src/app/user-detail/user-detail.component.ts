@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Firestore, doc, getDoc } from '@angular/fire/firestore';
 import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
 import { User } from '../models/user.class';
 
 @Component({
   selector: 'app-user-detail',
   standalone: true,
-  imports: [CommonModule, MatCardModule],
+  imports: [CommonModule, MatCardModule, MatIconModule, MatMenuModule],
   templateUrl: './user-detail.component.html',
   styleUrl: './user-detail.component.scss'
 })
@@ -45,5 +47,13 @@ export class UserDetailComponent {
       .catch((error) => {
         console.error('Error fetching user:', error);
       });
+    }
+
+    editUserDetail() {
+
+    }
+
+    editMenu() {
+
     }
 }

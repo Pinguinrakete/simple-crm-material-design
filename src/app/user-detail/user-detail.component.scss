@@ -22,7 +22,14 @@
     justify-content: center;
     height: 100px;
 
-    h2 {
+    h2, p {
         margin-bottom: 0;
     }   
+}
+
+.pin-right-upper-corner {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
 }
